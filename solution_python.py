@@ -19,8 +19,8 @@ class EventSourcer():
         Perform the action that is pointed by the current_action_pointer
 
         action: To determine whether to perform the action or to reverse it
-            None -> perform
-            1 -> Reverse the action
+            1 -> perform
+            -1 -> Reverse the action
         """
         self.value += self.history[self.current_action_pointer] * action
 
